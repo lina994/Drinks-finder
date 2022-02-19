@@ -1,0 +1,10 @@
+.Main {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "list info ingredients"
+    "list info ingredients";
+}
+
+

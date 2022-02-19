@@ -1,23 +1,29 @@
-import logo from './logo.svg';
+import { useEffect } from "react";
+import DrinkSearch from 'components/DrinkSearch/DrinkSearch';
+import Filters from 'components/Filters/Filters';
+import Main from 'components/Main/Main';
+import { getRandomDrink } from 'apiCalls/searchCall';
 import './App.css';
 
-function App() {
+
+function getAndSetRandomDrink(setDrinks) {
+  getRandomDrink().then((response) => {
+    setDrinks(response.data.drinks);
+  });
+}
+
+function App({ setDrinks }) {
+
+  useEffect(() => {
+    getAndSetRandomDrink(setDrinks);
+  });
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <header className="App-header">Drinks Finder</header>
+      <DrinkSearch />
+      <Filters />
+      <Main />
     </div>
   );
 }

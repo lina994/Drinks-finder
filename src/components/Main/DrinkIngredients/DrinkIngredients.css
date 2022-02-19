@@ -1,0 +1,19 @@
+.Drink-ingredients {
+  border: 1px solid #4D5057;
+  padding: 10px;
+  text-align: left;
+  grid-area: ingredients;
+}
+
+.Drink-ingredients h2 {
+  margin-bottom: 10px;
+  font-family: 'Signika', sans-serif;
+  font-size: calc(16px + 0.6vw);
+  color: #E37500;
+  font-weight: 500;
+}
+
+.Drink-ingredients ul {
+  font-size: calc(12px + 0.3vw);
+  color: #4D5057;
+}

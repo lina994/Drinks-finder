@@ -1,4 +1,23 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
 .App {
+  padding: 20px 10px;
+  text-align: center;
+}
+
+.App-header {
+  text-align: center;
+  color: #F60E70;
+  font-family: 'Bad Script', cursive;
+  font-size: calc(26px + 3vw);
+  margin-bottom: 20px;
+}
+
+
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +54,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
