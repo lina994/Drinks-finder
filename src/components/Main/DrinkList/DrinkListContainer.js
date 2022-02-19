@@ -8,7 +8,10 @@ import {
 let mapStateToProps = (state) => {
   return {
     drinks: state.main.drinks,
-    selectedElementId: state.main.selectedElementId
+    selectedElementId: state.main.selectedElementId,
+    ingredientName: state.filters.ingredientName,
+    category: state.filters.selectedCategory,
+    sortMethod: state.filters.sortMethod
   };
 };
 

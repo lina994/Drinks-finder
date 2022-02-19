@@ -1,0 +1,8 @@
+.Filters {
+  text-align: left;
+}
+
+.Drink-filters {
+  display: flex;
+  justify-content: space-between;
+}

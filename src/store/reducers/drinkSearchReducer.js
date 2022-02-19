@@ -5,7 +5,7 @@ import {
 
 let initialState = {
   searchValue: '',
-  searchHistory: [] // max 4 last values
+  searchHistory: []
 }
 
 

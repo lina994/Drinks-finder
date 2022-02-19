@@ -1,6 +1,6 @@
 .Drink-list-element {
   display: flex;
-  border: 1px solid #4D5057;
+  border-bottom: 1px solid #4D5057;
   padding: 10px 15px;
   text-align: left;
   cursor: pointer;
