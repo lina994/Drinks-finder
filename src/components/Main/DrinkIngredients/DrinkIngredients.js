@@ -15,7 +15,7 @@ function DrinkIngredients({ drink }) {
     <section className="Drink-ingredients">
       <h2>Ingredients</h2>
       <ul>
-        {drink && ingredients.map((ingredient)=><li>{ingredient}</li>)}
+        {drink && ingredients.map((ingredient, index)=><li key={index} >{ingredient}</li>)}
       </ul>
     </section>
   );
