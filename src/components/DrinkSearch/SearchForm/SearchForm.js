@@ -7,7 +7,7 @@ function handleChange(event, updateValue) {
 
 function handleSubmit(event, sethDrinks, value) {
   getDrinks(value).then((response) => {
-    sethDrinks(response.data.drinks);
+    sethDrinks(response.data.drinks, value);
   });
   event.preventDefault();
 }

@@ -24,10 +24,15 @@ export function drinkSearchReducer(state = initialState, action) {
       {
         let stateCopy = {
           ...state,
-          searchValue: ''
+          searchValue: '',
+          searchHistory: [...state.searchHistory]
         };
-        if (action.addToHistory) {
-          stateCopy.searchHistory = [...state.searchHistory, state.searchValue]
+        if (action.value) {
+          let index = stateCopy.searchHistory.indexOf(action.value);
+          if (index !== -1) {
+            stateCopy.searchHistory.splice(index, 1); // remove one item
+          }
+          stateCopy.searchHistory.push(action.value);
         }
         return stateCopy;
       }

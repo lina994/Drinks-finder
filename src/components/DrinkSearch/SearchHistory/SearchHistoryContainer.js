@@ -13,8 +13,8 @@ let mapStateToProps = (state) => {
 
 let mapDispatchToProps = (dispatch) => {
   return {
-    sethDrinks: (drinks) => {
-      dispatch(setDrinksActionCreator(drinks, false));
+    sethDrinks: (drinks, value) => {
+      dispatch(setDrinksActionCreator(drinks, value));
     }
   };
 };

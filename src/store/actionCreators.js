@@ -15,11 +15,11 @@ export function updateDrinkSearchValueActionCreator(value) {
     };
   }
   
-export function setDrinksActionCreator(drinks, addToHistory) {
+export function setDrinksActionCreator(drinks, value) {
   return {
     type: SET_DRINKS,
     drinks: drinks,
-    addToHistory: addToHistory
+    value: value
   };
 }
 

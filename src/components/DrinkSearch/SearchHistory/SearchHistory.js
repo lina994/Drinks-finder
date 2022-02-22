@@ -3,7 +3,7 @@ import './SearchHistory.css';
 
 function handleClick(event, sethDrinks, value) {
   getDrinks(value).then((response) => {
-    sethDrinks(response.data.drinks);
+    sethDrinks(response.data.drinks, value);
   });
 }
 

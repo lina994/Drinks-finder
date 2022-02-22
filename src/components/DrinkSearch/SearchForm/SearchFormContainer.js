@@ -17,8 +17,8 @@ let mapDispatchToProps = (dispatch) => {
     updateDrinkName: (value) => {
       dispatch(updateDrinkSearchValueActionCreator(value));
     },
-    sethDrinks: (drinks) => {
-      dispatch(setDrinksActionCreator(drinks, true));
+    sethDrinks: (drinks, value) => {
+      dispatch(setDrinksActionCreator(drinks, value));
     }
   };
 };
