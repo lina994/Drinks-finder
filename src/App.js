@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import DrinkSearch from 'components/DrinkSearch/DrinkSearch';
-import Filters from 'components/Filters/Filters';
 import Main from 'components/Main/Main';
 import { getRandomDrink } from 'apiCalls/searchCall';
 import './App.css';
@@ -22,7 +21,6 @@ function App({ setDrinks }) {
     <div className="App">
       <header className="App-header">Drinks Finder</header>
       <DrinkSearch />
-      <Filters />
       <Main />
     </div>
   );

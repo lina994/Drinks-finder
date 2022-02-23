@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import DrinkIngredients from './DrinkIngredients';
+import Drink from './Drink';
 import { 
   
 } from 'store/actionCreators';
@@ -16,7 +16,7 @@ let mapDispatchToProps = (dispatch) => {
   };
 };
 
-const DrinkIngredientsContainer = connect(mapStateToProps, mapDispatchToProps)(DrinkIngredients);
+const DrinkContainer = connect(mapStateToProps, mapDispatchToProps)(Drink);
 
 
-export default DrinkIngredientsContainer;
+export default DrinkContainer;
