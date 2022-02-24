@@ -1,5 +1,18 @@
 .Drink-search {
+  padding: 90px 10px 40px 10px;
+  text-align: center;
+}
+
+.Drink-search-inner {
+  max-width: 100%;
   display: inline-block;
   margin: 0 auto;
   text-align: left;
 }
+
+@media only screen and (max-width: 768px) {
+  .Drink-search {
+    padding: 40px 10px 20px 10px;
+  }
+}
+

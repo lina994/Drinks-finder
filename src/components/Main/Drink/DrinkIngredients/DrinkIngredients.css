@@ -1,7 +1,7 @@
 .Drink-ingredients {
-  border: 1px solid #4D5057;
-  padding: 10px;
-  text-align: left;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  padding: 10px 20px;
   grid-area: ingredients;
 }
 
@@ -16,4 +16,20 @@
 .Drink-ingredients ul {
   font-size: calc(12px + 0.3vw);
   color: #4D5057;
+  padding-left: 15px;
 }
+
+@media only screen and (max-width: 768px) {
+  .Drink-ingredients {
+    padding: 10px;
+  }
+
+  .Drink-ingredients h2 {
+    font-size: 20px;
+  }
+
+  .Drink-ingredients ul {
+    font-size: 16px;
+  }
+}
+

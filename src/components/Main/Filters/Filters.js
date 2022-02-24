@@ -7,10 +7,8 @@ import './Filters.css';
 function Filters() {
   return (
     <div className="Filters">
-      <div className="Drink-filters">
-        <IngredientFilterContainer />
-        <CategoryFilterContainer />
-      </div>
+      <IngredientFilterContainer />
+      <CategoryFilterContainer />
       <DrinkSortContainer />
     </div>
   );

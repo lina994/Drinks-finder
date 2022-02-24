@@ -1,6 +1,101 @@
 .Drink-list {
   grid-area: list;
-  border: 1px solid #4D5057;
+  max-height: 500px;
+  padding: 8px 5px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.5);
+  position: relative;
+}
+
+.Drink-list-content {
+  max-height: 100%;
+  overflow-y: auto;
+  scrollbar-color: #d77db277 #d77db222;
+  scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+  width: 16px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 3px rgba(128, 128, 128, 0.3); 
+  background: transparent;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #d77db277;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #d77db2aa;
+}
+
+.Close-wrapper, .Open-wrapper {
+  display: none;
 }
 
 
+@media only screen and (max-width: 425px) {
+  .Drink-list {
+    background: transparent;
+  }
+
+  .Drink-list-content {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    max-height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-radius: 0;
+    background: rgba(255, 255, 255, 1);
+  }
+
+  .Drink-list-content.open {
+    display: block;
+  }
+
+  .Open-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .Open-buttom {
+    background-color: #d77db2;
+    padding: 20px;
+    cursor: pointer;
+    color: #fff;
+  }
+
+  .Close-wrapper {
+    height: 50px;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 5px;
+  }
+
+  .Close-buttom {
+    width: 50px;
+    height: 50px;
+    background-color: #d77db277;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    border-radius: 10px;
+    align-items: center;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+  .Open-buttom:hover, .Close-buttom:hover {
+    background-color: #aa638c;
+  }
+
+}

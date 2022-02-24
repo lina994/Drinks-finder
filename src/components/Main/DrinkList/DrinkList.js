@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import ListElement from './ListElement/ListElement';
 import './DrinkList.css';
 
@@ -40,6 +41,8 @@ function _sortByDateDesc(drinks) { // descending
 }
 
 function DrinkList({ drinks, selectedElementId, ingredientName, category, sortMethod, selectDrink }) {
+  let [isOpen, setIsOpen] = useState(false);
+
   let filtredList = drinks;
   if (ingredientName) {
     filtredList = filtredList.filter((drink) => _isContainIngredient(drink, ingredientName));
@@ -56,14 +59,22 @@ function DrinkList({ drinks, selectedElementId, ingredientName, category, sortMe
   
   return (
     <div className="Drink-list">
-      {filtredList.map((drink) => <ListElement 
-        key={drink.idDrink}
-        drinkId={drink.idDrink}
-        drinkImg={drink.strDrinkThumb}
-        drinkName={drink.strDrink}
-        dateModified={drink.dateModified} 
-        selectedElementId={selectedElementId}
-        selectDrink={selectDrink} />)}
+      <div className="Open-wrapper">
+          <div className="Open-buttom" onClick={() => setIsOpen(true)}>Open drink list</div>
+        </div>
+      <div className={`Drink-list-content${isOpen ? " open" : ""}`}>
+        <div className="Close-wrapper">
+          <div className="Close-buttom" onClick={() => setIsOpen(false)}>X</div>
+        </div>
+        {filtredList.map((drink) => <ListElement 
+          key={drink.idDrink}
+          drinkId={drink.idDrink}
+          drinkImg={drink.strDrinkThumb}
+          drinkName={drink.strDrink}
+          dateModified={drink.dateModified} 
+          selectedElementId={selectedElementId}
+          selectDrink={selectDrink} />)}
+      </div>
     </div>
   );
 }

@@ -1,0 +1,14 @@
+
+.Drink-iamge {
+  width: 100%;
+  grid-area: img;
+}
+
+.Drink-iamge img {
+  width: 100%;
+  /* width: 398px; */
+  /* height: 400px; */
+  border-radius: 10px;
+  overflow: hidden;
+}
+

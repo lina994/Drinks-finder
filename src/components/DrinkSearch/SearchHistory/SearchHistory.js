@@ -2,8 +2,8 @@ import { getDrinks } from 'apiCalls/searchCall'
 import './SearchHistory.css';
 
 function handleClick(event, sethDrinks, value) {
-  getDrinks(value).then((response) => {
-    sethDrinks(response.data.drinks, value);
+  getDrinks(value).then((drinks) => {
+    sethDrinks(drinks, value);
   });
 }
 

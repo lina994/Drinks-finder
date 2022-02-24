@@ -6,8 +6,10 @@ import './DrinkSearch.css';
 function DrinkSearch() {
   return (
     <div className="Drink-search">
-      <SearchFormContainer />
-      <SearchHistoryContainer />
+      <div className="Drink-search-inner">
+        <SearchFormContainer />
+        <SearchHistoryContainer />
+      </div>
     </div>
   );
 }

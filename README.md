@@ -1,4 +1,4 @@
-# Cocktail Recipes App
+# Drinks Finder - Cocktail Recipes App
 
 React app that uses the [TheCocktailDB](https://www.thecocktaildb.com) api to present recipes of drinks and cocktails.
 
@@ -37,6 +37,8 @@ You may also see any lint errors in the console.
 
 ## Screenshots
 
+## diagram
 
+[![diagram.png](https://i.postimg.cc/yNhhH3fy/diagram.png)](https://postimg.cc/3yR0jNQk)
 
 

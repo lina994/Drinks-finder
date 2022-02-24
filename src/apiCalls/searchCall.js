@@ -7,6 +7,8 @@ export function getDrinks(drinkName) {
       params: {
         s: drinkName
       }
+    }).then((response) => {
+      return response.data.drinks || []
     });
   } catch (error) {
     console.log(error);

@@ -1,10 +1,31 @@
 .Main {
   display: grid;
-  grid-template-columns: 1fr auto 1fr;
-  grid-template-rows: auto;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto 1fr;
   grid-template-areas: 
-    "list info ingredients"
-    "list info ingredients";
+    "list filter"
+    "list info";
+  gap: 30px 20px;
+  padding: 20px 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .Main {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "filter info"
+    "list info";
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .Main {
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "filter"
+    "list"
+    "info";
+  }
 }
 
 
