@@ -35,10 +35,12 @@ You may also see any lint errors in the console.
 - Sort by name and date.
 - View drink image, description and recipe.
 
-## Screenshots
-
 ## diagram
 
-[![diagram.png](https://i.postimg.cc/yNhhH3fy/diagram.png)](https://postimg.cc/3yR0jNQk)
+[![drinks-finder-diagram.png](https://i.postimg.cc/yNhhH3fy/drinks-finder-diagram.png)](https://postimg.cc/3yR0jNQk)
 
+## Screenshots
 
+[![drinks-finder-screenshot1.png](https://i.postimg.cc/CKpwJ0xt/drinks-finder-screenshot1.png)](https://postimg.cc/TKQ8YZmq)
+
+[![drinks-finder-screenshot2.png](https://i.postimg.cc/cLnsQC0w/drinks-finder-screenshot2.png)](https://postimg.cc/pmPbv29L)
