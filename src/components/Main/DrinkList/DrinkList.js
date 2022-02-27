@@ -73,7 +73,8 @@ function DrinkList({ drinks, selectedElementId, ingredientName, category, sortMe
           drinkName={drink.strDrink}
           dateModified={drink.dateModified} 
           selectedElementId={selectedElementId}
-          selectDrink={selectDrink} />)}
+          selectDrink={selectDrink} 
+          setIsOpen={setIsOpen} />)}
       </div>
     </div>
   );
