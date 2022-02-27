@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Drinks-finder/static/css/main.a9e6c70f.css",
-    "main.js": "/Drinks-finder/static/js/main.f0a5011c.js",
+    "main.css": "/Drinks-finder/static/css/main.74bbfd15.css",
+    "main.js": "/Drinks-finder/static/js/main.32f6f998.js",
     "static/js/787.e5a4e1a7.chunk.js": "/Drinks-finder/static/js/787.e5a4e1a7.chunk.js",
     "index.html": "/Drinks-finder/index.html",
-    "main.a9e6c70f.css.map": "/Drinks-finder/static/css/main.a9e6c70f.css.map",
-    "main.f0a5011c.js.map": "/Drinks-finder/static/js/main.f0a5011c.js.map",
+    "main.74bbfd15.css.map": "/Drinks-finder/static/css/main.74bbfd15.css.map",
+    "main.32f6f998.js.map": "/Drinks-finder/static/js/main.32f6f998.js.map",
     "787.e5a4e1a7.chunk.js.map": "/Drinks-finder/static/js/787.e5a4e1a7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a9e6c70f.css",
-    "static/js/main.f0a5011c.js"
+    "static/css/main.74bbfd15.css",
+    "static/js/main.32f6f998.js"
   ]
 }
